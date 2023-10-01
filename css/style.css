@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Young+Serif&display=swap');
+
+:root * {
+    box-sizing: border-box;
+}
+:root {
+    font-size: 15px;
+    background: linear-gradient(45deg, #181818, #000000);
+    background-attachment: fixed;
+    color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: calc(100vw - (100vw - 100%));
+}
+
+header {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #181818, #000000);
+    margin: 0 0 2rem 0;
+}
+
+h1  {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Young Serif', serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Young Serif', serif;
+    margin: 1rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+a:hover {
+    transition: all .3s ease-in-out;
+    color: orange;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #181818, #000000);
+    margin-top: 2em;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    background: linear-gradient(45deg, #1f1f1f, #181818);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid #1f1f1f1f;
+    width: 100%;
+    text-align: left;
+}
+
+details {
+    width: 100%;
+}
+
+details p {
+    padding: 0 1rem 1rem;
+}
+
+details summary {
+    width: 100%;
+    background: #d8d8d8;
+    color: black;
+    padding: 1rem;
+    font-family: 'Young Serif', serif;
+    cursor: pointer;
+}
+
+details summary:hover {
+    color: orange;
+}
+
+details[open] summary {
+    background: transparent;
+    color: white;
+}
+
+article header {
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 1rem 0;
+    text-align: justify;
+    width: 100%;
+}
+
+article header small {
+    font-size: 0.8rem;
+    color: white;
+    padding: .5rem;
+    background: orange;
+    border-radius: 0 0 0 .5rem;
+    margin: .5rem;
+    position: absolute;
+    right: -.5rem;
+    top: -.5rem;
+    opacity: .5;
+}
+
+article footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    background: #d8d8d8;
+}
+
+article footer a {
+    color: black;
+}
+
+article img {
+    max-width: 90%;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Young Serif', serif;
+    display: inline;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        background: linear-gradient(45deg, #ffffff, #d8d8d8);
+        background-attachment: fixed;
+        color: #000000;
+    }
+    header {
+        background: linear-gradient(45deg, #ffffff, #d8d8d8);
+    }
+    footer {
+        background: linear-gradient(45deg, #ffffff, #d8d8d8);
+    }
+    article {
+        background: linear-gradient(45deg, #ffffff, #d8d8d8);
+        border: 1px solid #d8d8d8;
+    }
+    article header small {
+        background: orange;
+        color: white;
+    }
+    article footer {
+        background: #d8d8d8;
+    }
+    article footer a {
+        color: black;
+    }
+    article img {
+        max-width: 90%;
+        object-fit: cover;
+    }
+    a {
+        color: currentColor;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: 'Young Serif', serif;
+        margin: 1rem;
+        font-weight: bold;
+        display: inline-block;
+    }
+    a:hover {
+        transition: all .3s ease-in-out;
+        color: orange;
+        text-decoration: underline;
+    }
+    a:active {
+        color: white;
+        text-decoration: underline;
+    }
+
+    details[open] summary {
+        color: black;
+    }
+}
